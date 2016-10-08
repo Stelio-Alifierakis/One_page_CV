@@ -1,0 +1,541 @@
+/*======================================================================
+			SECTION GENERALE
+======================================================================*/
+
+body{
+	width:100%;
+	padding:0;
+	background-color:black;
+	height:100%;
+	margin:0;
+}
+
+div#corps{
+	width:75%;
+	margin:auto;
+	background-color:#fefedd;
+	margin-top:0;
+	margin-bottom:0;
+	padding:1%;
+	padding-top:0;
+	padding-bottom:0;
+	position:relative;
+	top:0;
+}
+
+ul{
+	list-style-type:none;
+	width:80%;
+	margin:auto;
+	padding:0;
+	margin-bottom:1%;
+	text-align:center;
+}
+
+li{
+	display:inline;
+	
+}
+
+li a:link{
+	text-decoration:none;
+	color:#009900;
+}
+
+li a:visited{
+	text-decoration:none;
+	color:#005500;
+}
+
+li a:hover{
+	color:#00bb00;
+}
+
+li a:active{
+	color:#00ff00;
+}
+
+.design{
+	width:70%;
+	margin:auto;
+	margin-top:1%;
+	margin-bottom:0;
+	font-size:1.5em;
+}
+
+header.design{
+	margin-top:0;
+}
+
+h1{
+	font-size:2.6em;
+}
+
+h1,h2{
+	margin:auto;
+	margin-top:0;
+	margin-bottom:0;
+	text-align:center;
+}
+
+h2{
+	color:#ffffff;
+}
+
+h3{
+	font-size:0.8em;
+	color:#ffffff;
+}
+
+canvas{
+	background-color:#ffffff;
+	height:30px;
+	width:500px;
+}
+
+.nonFlott{
+	clear:both;
+	margin-top:1%;
+}
+
+/*======================================================================
+			SECTION HEADER
+======================================================================*/
+
+header{
+	border:1px black solid;
+	margin-top:0;
+	border-top:0;
+}
+
+header p{
+	width:80%;
+	min-height:200px;
+	margin:auto;
+	margin-top:0;
+	margin-bottom:0;
+}
+
+header p img{
+	float:left;
+	margin-right:15%;
+}
+
+/*======================================================================
+			SECTION NAV
+======================================================================*/
+
+nav{
+	margin:auto;
+	width:50%
+}
+
+nav p{
+	width:80%;
+	margin:auto;
+	text-align:center;
+	margin-top:5%;
+}
+
+/*======================================================================
+			SECTION SECTION
+======================================================================*/
+
+section.design{
+	margin-top:1%;
+	background-color:#ffcc70;
+	padding:0;
+	overflow:auto;
+}
+
+section header{
+	border:none;
+	background-color:#337700;
+	margin:0;
+}
+
+/*======================================================================
+			SECTION PRESENTATION
+======================================================================*/
+
+section p#pres{
+	text-align:center;
+}
+
+/*======================================================================
+			SECTION COMPETENCE ET QUALITE
+======================================================================*/
+
+#compQualg{
+	float:left;
+	width:55%;
+	padding:0;
+	margin-bottom:1%;
+	background-color:#ffcc70;
+}
+
+#compQuald{
+	float:right;
+	width:42%;
+	overflow:visible;
+}
+
+#compQuald section{
+	position: relative;
+	padding:0;
+	top:200px;
+	background-color:#ffcc70;
+	overflow:auto;
+}
+
+#compQuald * p{
+	text-align:center;
+}
+
+.intDesign {
+	margin:2%;
+	
+}
+
+/*======================================================================
+			SECTION AUTRES SECTION GENERALE
+======================================================================*/
+
+.visionnage{
+	position:relative;
+	margin:auto;
+	margin-bottom:0;
+	margin-top:0;
+	padding:1%;
+	padding-top:0;
+}
+
+.visionnage p{
+	display:none;
+}
+
+/*======================================================================
+			SECTION FOOTER
+======================================================================*/
+
+.footer{
+	/*width:70%;*/
+	background-color:#005500;
+	/*margin:auto;*/
+}
+
+.footer div{
+	color:#ffffff;
+	font-size:0.8em;
+}
+
+/*======================================================================
+			SECTION MEDIA QUERIES
+======================================================================*/
+@media screen and (max-width:1800px){
+	canvas{
+		width:450px;
+	}
+}
+
+@media screen and (max-width:1720px){
+	nav{
+		width:70%
+	}
+	
+	header p img{
+		margin-right:5%;
+	}
+	
+	div#corps{
+		width:80%;
+	}
+	
+	.design{
+		width:85%;
+	}
+	
+	div.intDesign p{
+		margin-top:1%;
+		margin-bottom:1%;
+	}
+	
+	canvas{
+		width:600px;
+	}
+	
+	.visionnage{
+		padding:2%;
+		padding-top:0;
+	}
+}
+
+@media screen and (max-width:1650px){
+	canvas{
+		width:550px;
+	}
+}
+
+@media screen and (max-width:1500px){
+	canvas{
+		width:500px;
+	}
+}
+
+@media screen and (max-width:1375px){
+	canvas{
+		width:450px;
+	}
+}
+
+@media screen and (max-width:1280px){
+	
+	nav{
+		width:80%
+	}
+
+	canvas{
+		width:425px;
+	}
+	
+	h1{
+		font-size:2em;
+	}
+	
+	header p{
+		width:90%;
+	}
+	
+	section p#pres{
+		padding:1%;
+	}
+}
+
+@media screen and (max-width:1175px){
+	canvas{
+		width:375px;
+	}
+}
+
+@media screen and (max-width:1024px){
+	
+	div#corps{
+		width:85%;
+	}
+	
+	header p{
+		width:95%;
+	}
+}
+
+@media screen and (max-width:980px){
+	
+	div#corps{
+		width:90%;
+	}
+	
+	.design{
+		width:90%;
+	}
+	
+	nav{
+		width:90%
+	}	
+	
+	h1{
+		font-size:1.8em;
+	}
+	
+	header p{
+		width:95%;
+	}
+	
+	header p img{
+		margin-right:2%;
+	}
+}
+
+@media screen and (max-width:900px){
+	canvas{
+		width:350px;
+	}
+}
+
+@media screen and (max-width:800px){
+	
+	div#corps{
+		width:100%;
+		padding:0;
+	}
+	
+	header p{
+		width:98%;
+	}
+	
+	nav{
+		width:95%
+	}
+	
+	.design{
+		width:95%;
+	}
+}
+
+@media screen and (max-width:700px){
+	canvas{
+		width:325px;
+	}
+}
+
+@media screen and (max-width:680px){
+	
+	header {
+		width:100%;
+	}
+
+	canvas{
+		width:315px;
+	}
+	
+	nav p{
+		width:100%;
+	}
+	
+	.design{
+		font-size:1.3em;
+	}
+	
+}
+
+@media screen and (max-width:640px){
+	
+	.design{
+		width:98%;
+	}
+	
+	canvas{
+		width:300px;
+	}
+	
+	nav{
+		width:98%
+	}	
+	
+	header.design{
+		width:100%;
+	}
+}
+
+@media screen and (max-width:600px){
+	canvas{
+		width:285px;
+	}
+}
+
+@media screen and (max-width:550px){
+	
+	h1{
+		font-size:1.5em;
+		margin-top:6%;
+		margin-bottom:4%;
+		color:#ffffff;
+	} 
+	
+	#compQualg{
+		float:none;
+		width:100%;
+	}
+	
+	#compQuald{
+		float:none;
+		width:100%;
+	}
+	
+	canvas{
+		width:500px;
+	}
+	
+	#compQuald section{
+		top:0;
+		margin-top:1%;
+		margin-bottom:3%;
+	}
+	
+	.nonFlott{
+		margin-top:3%;
+	}
+	
+	header{
+		background-color:#337700;
+	}
+	
+	header p{
+		text-align:center;
+		color:#ffffff;
+	}
+	
+	header p img{
+		float:none;
+		width:100px;
+		height:auto;
+	}
+	
+	.header p span{
+		display:block;
+		margin-bottom:1%;
+	}
+	
+	nav p a img{
+		width:75px;
+		height:auto;
+	}
+	
+	ul li img{
+		width:50px;
+		height:auto;
+	}
+}
+
+@media screen and (max-width:525px){
+	canvas{
+		width:450px;
+	}
+}
+
+@media screen and (max-width:475px){
+	canvas{
+		width:400px;
+	}
+}
+
+@media screen and (max-width:425px){
+	canvas{
+		width:375px;
+	}
+}
+
+@media screen and (max-width:400px){
+	nav p a img{
+		width:50px;
+		height:auto;
+	}
+	canvas{
+		width:325px;
+	}
+}
+
+@media screen and (max-width:360px){
+	
+	.design{
+		font-size:1em;
+	}
+	
+	h1{
+		font-size:1.3em;
+	}
+	
+	ul li img{
+		width:45px;
+		height:auto;
+	}
+}

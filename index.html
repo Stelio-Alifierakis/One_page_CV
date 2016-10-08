@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="One page CV de Stelio Alifierakis">
+		<meta name="author" content="Stelio Alifierakis">
+		<meta name="keywords" content="CV, one page CV, Informaticien, Développeur">
+		<meta name="viewport" content="width=device=width, initial-scale=1.0, shrink-to-fit=no">
+		<title>Stelio ALIFIERAKIS - One Page CV</title>
+		
+		<!--[if lte IE 8]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+			<script>
+				document.createElement('header');
+				document.createElement('nav');
+				document.createElement('article');
+				document.createElement('section');
+				document.createElement('footer');
+				document.createElement('canvas');
+			</script>
+		<![endif]--> 
+	
+		<link rel="stylesheet" href="css/MonCSS.css">
+		<!--[if lte IE 8]>
+			<link rel="stylesheet" type="text/css" href="css/ie8.css" media="all" />
+		<![endif]--> 
+		
+		<script type="text/javascript" src="javascript/jquery-1.12.3.min.js"></script>
+
+	</head>
+	
+	<body onload="init(),animeDessin()">
+	<div id="corps">
+		<header class="design header">
+			<h1>Informaticien</h1>
+			<p>
+				<img src="images/moi.jpg" width="170" height="180" alt="Moi">
+				<span>
+					Stelio ALIFIERAKIS <br>
+					7 Septembre 1988 <br/>
+					Boulevard Albert Elisabeth, 91 2/1<br>
+					7000 MONS<br>
+					<a href="mailto:stelio_a@hotmail.fr">stelio_a@hotmail.fr</a><br>
+					0474/31.85.12<br>
+				</span>
+			</p>
+		</header>
+		<nav>
+			<p>
+				<a href="#" onclick="scrolling(pres)"><img src="images/accueil.svg" width="100" height="100" alt="Accueil"></a>
+				<a href="#" onclick="scrolling(compQualg)"><img src="images/competence.svg" width="100" height="100" alt="Compétence"></a>
+				<a href="#" onclick="scrolling(expProf)"><img src="images/travail.svg" width="100" height="100" alt="Travail"></a>
+				<a href="#" onclick="scrolling(etude)"><img src="images/etude.svg" width="100" height="100" alt="Etude"></a>
+				<a href="#" onclick="scrolling(loisir)"><img src="images/loisir.svg" width="100" height="100" alt="Loisir"></a>
+			</p>
+		</nav>
+		<section class="design nonFlott">
+		<div class="IE8">
+			<header class="header">
+				<h2>Ma présentation</h2>
+			</header>
+			<p id="pres">
+				<em>"Jeune apprenti programmeur.<br>
+				Lors de mes cours d'Informatique option finalité réseau, j'ai appris autant à programmer qu'à créer un réseau d'entreprise.
+				Je préfère la programmation au réseau mais la connaissance de celui-ci reste un plus et peut toujours être utile."</em>
+			</p>
+		</div>
+		</section>
+		<div class="design">
+			<div id="compQuald">
+				<section>
+				<div class="IE8">
+					<header>
+						<h2>Mes qualités</h2>
+					</header>
+					<p>
+						<span id="qual1">Perseverance</span>
+					</p>
+					<p>
+						<span id="qual2">Respect</span>
+					</p>
+					<p>
+						<span id="qual3">Sincerite</span>
+					</p>
+					<p>
+						<span id="qual4">Creativite</span>
+					</p>
+					<p>
+						<span id="qual5">Logique</span>
+					</p>
+				</div>
+				</section>
+			</div>
+			<section id="compQualg">
+			<div class="IE8">
+				<header class="header">
+					<h2>Mes compétences</h2>
+				</header>
+				<div class="intDesign">
+					<p>
+						HTML <br>
+						<canvas id="canvHTML" height="30" width="300">Très bon</canvas>
+					</p>
+					<p>
+						CSS<br>
+						<canvas id="canvCSS" height="30" width="300">Très bon</canvas>
+					</p>
+					<p>
+						Javascript<br>
+						<canvas id="canvJS" height="30" width="300">Bon</canvas>
+					</p>
+					<p>
+						C<br>
+						<canvas id="canvC" height="30" width="300">Très bon</canvas>
+					</p>
+					<p>
+						C#<br>
+						<canvas id="canvCSharp" height="30" width="300">Très bon</canvas>
+					</p>
+					<p>
+						Python<br>
+						<canvas id="canvPython" height="30" width="300">Bon</canvas>
+					</p>
+					<p>
+						Java<br>
+						<canvas id="canvJava" height="30" width="300">Très bon</canvas>
+					</p>
+					<p>
+						UML<br>
+						<canvas id="canvUML" height="30" width="300">Bon</canvas>
+					</p>
+					<p>
+						Cisco Packet Tracer<br>
+						<canvas id="canvCPT" height="30" width="300">Bon</canvas>
+					</p>
+					<p>
+						Utilisation de machine virtuelle<br>
+						<canvas id="canvVM" height="30" width="300">Bon</canvas>
+					</p>
+				</div>
+			</div>
+			</section>
+		</div>
+		<section class="design nonFlott" id="expProf">
+		<div class="IE8">
+			<header class="header">
+				<h2>Expérience professionnelle</h2>
+			</header>
+			<div class="relContent">
+					<ul>
+						<li><a onclick="apparition('.exp2008','.parag')" class="bouton" href="javascript:void(0)">2008</a></li>
+						<li><a onclick="apparition('#exp2012','.parag')" class="bouton" href="javascript:void(0)">2012</a></li>
+						<li><a onclick="apparition('#exp2013','.parag')" class="bouton" href="javascript:void(0)">2013</a></li>
+						<li><a onclick="apparitions('.parag')" class="bouton" href="javascript:void(0)">Tout voir</a></li>
+					</ul>
+			</div>
+			<div class="visionnage" id="expProf">
+				<p class="parag exp2008">
+					2008 : Stage en tant que Graphiste-Lettreur auprés de l'entreprise PubDéco.
+				</p>
+				<p class="parag exp2008">
+					2008 : Stage en tant que Graphiste-Lettreur auprés de l'entreprise W-Graphic.
+				</p>
+				<p class="parag" id="exp2012">
+					2012 : CDD en tant que réassortisseur auprès de l'entreprise A&B Market.
+				</p>
+				<p class="parag" id="exp2013">
+					2013 : Stage en tant que Collaborateur Administratif auprès de l'entreprise Meaweb SPRL.
+				</p>
+			</div>
+		</div>
+		</section>
+		<section class="design" id="etude">
+		<div class="IE8">
+			<header class="header">
+				<h2>Etudes et formations</h2>
+			</header>
+					<ul class="relContent">
+						<li><a onclick="apparition('#form2006','.paragEtude')" href="javascript:void(0)">2006</a></li>
+						<li><a onclick="apparition('#form2008','.paragEtude')" href="javascript:void(0)">2008</a></li>
+						<li><a onclick="apparition('#form2009','.paragEtude')" href="javascript:void(0)">2009</a></li>
+						<li><a onclick="apparition('#form2010','.paragEtude')" href="javascript:void(0)">2010</a></li>
+						<li><a onclick="apparition('#form2013','.paragEtude')" href="javascript:void(0)">2013</a></li>
+						<li><a onclick="apparition('#form2017','.paragEtude')" href="javascript:void(0)">2014-2017</a></li>
+						<li><a onclick="apparitions('.paragEtude')" class="bouton" href="javascript:void(0)">Tout voir</a></li>
+					</ul>
+			<div class="visionnage" id="form">
+				<p class="paragEtude" id="form2006">
+					2006 : CESS général option classique latin obtenu auprès de l'Athenée Royal de Quiévrain.
+				</p>
+				<p class="paragEtude" id="form2008">
+					2008 : Attestation d'acquis de formation d'Employé en Communication Visuelle obtenu auprés du centre de formation Créaform ASBL.
+				</p>
+				<p class="paragEtude" id="form2009">
+					2009 : CESS de photographie obtenu auprès de l'Institut de Promotion Sociale de Jemappes .
+				</p>
+				<p class="paragEtude" id="form2010">
+					2010 : Diplôme de gestion de base obtenu auprès de l'Institut de Promotion Sociale de Jemappes.
+				</p>
+				<p class="paragEtude" id="form2013">
+					2013 : Attestation d’acquis de formation en Collaborateur Administratif auprés du centre d'examen Forem Formation (partenariat avec le Cefora).
+				</p>
+				<p class="paragEtude" id="form2017">
+					2014-2017 : Etude d'Informatique et Système finalité réseau. <strong>Etude en cours !</strong>
+				</p>
+			</div>
+		</div>
+		</section>
+		<section class="design" id="loisir">
+		<div class="IE8">
+			<header class="header">
+				<h2>Loisir</h2>
+			</header>
+				<ul>
+					<li><a onclick="apparition('#loisJv','.paragLoisir')" href="javascript:void(0)"><img src="images/jeuVideo.svg" width="75" height="75" alt="Jeux Video"></a></li>
+					<li><a onclick="apparition('#loisYt','.paragLoisir')" href="javascript:void(0)"><img src="images/youtube.svg" width="75" height="75" alt="Youtube"></a></li>
+					<li><a onclick="apparition('#loisLivre','.paragLoisir')" href="javascript:void(0)"><img src="images/livre.svg" width="75" height="75" alt="Lecture"></a></li>
+					<li><a onclick="apparition('#loisForum','.paragLoisir')" href="javascript:void(0)"><img src="images/article.svg" width="75" height="75" alt="Lecture"></a></li>
+					<li><a onclick="apparition('#loisCinema','.paragLoisir')" href="javascript:void(0)"><img src="images/cinema.svg" width="75" height="75" alt="Lecture"></a></li>
+				</ul>
+			<div class="visionnage">
+				<p class="paragLoisir" id="loisJv">
+					<strong>Jouer aux jeux vidéo:</strong> J'aime jouer aux jeux vidéo notamment aux jeux de stratégie, de survie et jeux style puzzle.
+				</p>
+				<p class="paragLoisir" id="loisYt">
+					<strong>Créer des vidéos pour Youtube:</strong> Je suis un petit youtubeur. Ce hobby rejoint celui des jeux vidéos, vu que je m'enregistre en train de jouer aux jeux que j'aime.
+				</p>
+				<p class="paragLoisir" id="loisLivre">
+					<strong>Lire des livres:</strong> J'adore lire des livres. Mon style de romans préférés sont les livres fantastique, héroic fantasy, science-fiction et horreur.
+					Mes auteurs préférés sont Stephen King, J.K. Rowling, J. R. R. Tolkien et Robin Hobb
+				</p>
+				<p class="paragLoisir" id="loisForum">
+					<strong>Rédiger des articles pour un forum:</strong> J'ai le statut de rédacteur dans un forum de jeu vidéo. De ce fait, je rédige des articles pour ce forum et je parle notamment des jeux vidéos qui m'ont plu.
+				</p>
+				<p class="paragLoisir" id="loisCinema">
+					<strong>Aller au cinéma:</strong> Avec ma fiancée, nous aimons aller voir des films. Nous allons assez souvent au cinéma regarder des films au box office.
+				</p>
+			</div>
+		</div>
+		</section>
+		<footer class="design footer">
+			<h3>Références pour les icônes :</h3>
+			<div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+			<div>Icons made by <a href="http://www.flaticon.com/authors/madebyoliver" title="Madebyoliver">Madebyoliver</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+		</footer>
+		<script type="text/javascript" src="javascript/projet.js"></script>
+	</div>
+	</body>
+</html>

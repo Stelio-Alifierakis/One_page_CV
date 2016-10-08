@@ -1,0 +1,40 @@
+/*======================================================================
+			SECTION IE8
+======================================================================*/
+
+.IE8{
+	background-color:#ffcc70;
+}
+
+div.design{
+	padding:0;
+	width:99%;
+}
+
+#compQualg{
+	float:none;
+	position:relative;
+	top:0;
+	width:100%;
+}
+
+#compQuald{
+	float:none;
+	position:relative;
+	top:0px;
+	z-index:0;
+	width:100%;
+}
+
+.design{
+	margin:10px;
+}
+
+.footer {
+	color:#000000;
+}
+
+h3{
+	font-size:0.8em;
+	color:#000000;
+}
